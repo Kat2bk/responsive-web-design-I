@@ -9,35 +9,23 @@ body {
     padding: 20px;
 }
 
-
 nav {
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: space-evenly; */
-    top: 0;
-    position: fixed;
+    justify-content: space-evenly;
     background-color: white;
-    width: 50%;
-    transform: translateX(50%);
+    width: 55%;
 }
 
 nav a {
     text-align: center;
-    padding: 17px;
+    padding: 18px;
     text-decoration: none;
     color: grey;
 }
 
 nav a:hover {
     color: greenyellow;
-}
-
-.h1-head {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    text-align: center;
-    font-size: 100%;
 }
 
 .header {
@@ -47,23 +35,39 @@ nav a:hover {
     margin-top: 30px;
 }
 
-/* First section */
-
-.whole div {
-    width: 40%;
+.h1-head {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    font-size: 150%;
 }
 
-.whole, .half {
+/* First section */
+
+.whole {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+/* .whole, .half {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: left;
+} */
+
+.half {
+    width: 50%;
+    text-align: left;
 }
 
 .button {
     text-decoration: none;
     color: #015AAB;
     border: 1px solid #015AAB;
-    padding: 3px 5px;
+    padding: 3px 10px;
     font-size: 0.9rem;
     border-radius: 5px;
 }
@@ -75,16 +79,11 @@ nav a:hover {
     border: 2px solid white;
 }
 
-/* can't align text to the left */
-/* 
-.half h3, p {
-    text-align: left;
-} */
-
 /*  image in the middle */
 .banner-img {
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 /* second section */
@@ -109,6 +108,35 @@ nav a:hover {
 
 .copyright {
     text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo2 {
+        display: none;
+    }
+    .h1-head {
+        font-size: 200%;
+    }
+   .banner-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+   }
+   .half {
+    padding: 20px;
+   }
+   .button {
+    width: 50%;
+   }
+   .logo {
+       
+   }
 }
 
 
