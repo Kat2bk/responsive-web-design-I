@@ -1,3 +1,114 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+    box-sizing: border-box;
+    /* max-width: 100%; */
+    /* padding: 0;
+    margin: 0; */
+}
+
+body {
+    padding: 20px;
+}
+
+
+nav {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+    top: 0;
+    position: fixed;
+    background-color: white;
+    width: 50%;
+    transform: translateX(50%);
+}
+
+nav a {
+    text-align: center;
+    padding: 17px;
+    text-decoration: none;
+    color: grey;
+}
+
+nav a:hover {
+    color: greenyellow;
+}
+
+.h1-head {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    font-size: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* First section */
+
+.whole div {
+    width: 40%;
+}
+
+.whole, .half {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.button {
+    text-decoration: none;
+    color: #015AAB;
+    border: 1px solid #015AAB;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: white;
+    background-color: #015AAB;
+    transition: 0.6s;
+    border: 2px solid white;
+}
+
+/* can't align text to the left */
+/* 
+.half h3, p {
+    text-align: left;
+} */
+
+/*  image in the middle */
+.banner-img {
+    display: flex;
+    justify-content: center;
+}
+
+/* second section */
+
+.whole-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third {
+    width: 30%;
+}
+
+    
+/* footer */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
 
 
