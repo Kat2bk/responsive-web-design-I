@@ -1,3 +1,166 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+* {
+    box-sizing: border-box;
+    /* max-width: 100%; */
+    /* padding: 0;
+    margin: 0; */
+}
 
+body {
+    padding: 20px;
+}
 
+.greatidea, nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+} */
+
+nav a {
+    text-align: center;
+    padding: 0.35em;
+    text-decoration: none;
+    color: grey;
+}
+
+nav a:hover {
+    color: greenyellow;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.h1-head {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+    font-size: 150%;
+}
+
+/* First section */
+
+.whole {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* .whole, .half {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: left;
+} */
+
+.half {
+    width: 50%;
+    text-align: left;
+}
+
+.button {
+    text-decoration: none;
+    color: #015AAB;
+    border: 1px solid #015AAB;
+    padding: 5px 40px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    /* margin-bottom: 30px; */
+}
+
+.button:hover {
+    color: white;
+    background-color: #015AAB;
+    transition: 0.6s;
+    border: 2px solid white;
+}
+
+/*  image in the middle */
+.banner-img {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* second section */
+
+.whole-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third {
+    width: 30%;
+}
+
+    
+/* footer */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* media queries */
+
+@media (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo2 {
+        display: none;
+    }
+    .h1-head {
+        font-size: 200%;
+    }
+   .banner-img {
+    width: 80%;
+   }
+   .half {
+    padding: 20px;
+   }
+   .greatidea {
+       width: 20%;
+       padding: 5px;
+   }
+   .links {
+       width: 85%;
+   }
+}
+
+@media (max-width: 500px) {
+    body {
+    padding: 30px;
+    }
+    .whole-two {
+        flex-direction: column;
+    }
+    .third {
+        width: 95%;
+    }
+    .banner-img {
+        width: 10%;
+        height: auto;
+    }
+    .links a {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid black;
+    }
+}
