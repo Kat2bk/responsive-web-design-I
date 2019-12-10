@@ -6,25 +6,18 @@
 }
 
 body {
-    padding: 20px;
+    padding: 2.0rem;
 }
 
 .greatidea, nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-/* nav {
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
-    background-color: white;
-} */
+}
 
 nav a {
     text-align: center;
-    padding: 0.35em;
+    padding: 1.0rem;
     text-decoration: none;
     color: grey;
 }
@@ -37,7 +30,7 @@ nav a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 40px 0;
+    margin: 4.0rem 0;
 }
 
 .h1-head {
@@ -56,13 +49,6 @@ nav a:hover {
     justify-content: space-between;
 }
 
-/* .whole, .half {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    text-align: left;
-} */
-
 .half {
     width: 50%;
     text-align: left;
@@ -72,9 +58,9 @@ nav a:hover {
     text-decoration: none;
     color: #015AAB;
     border: 1px solid #015AAB;
-    padding: 5px 40px;
+    padding: 0.5rem 4.0rem;
     font-size: 0.9rem;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     /* margin-bottom: 30px; */
 }
 
@@ -89,7 +75,7 @@ nav a:hover {
 .banner-img {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 1.0rem;
 }
 
 /* second section */
@@ -109,7 +95,7 @@ nav a:hover {
 .contact {
     display: flex;
     flex-direction: column;
-    line-height: 20px;
+    line-height: 2.0rem;
 }
 
 .copyright {
@@ -130,14 +116,14 @@ nav a:hover {
         font-size: 200%;
     }
    .banner-img {
-    width: 80%;
+    align-items: center;
    }
    .half {
-    padding: 20px;
+    padding: 2.0rem;
    }
    .greatidea {
        width: 20%;
-       padding: 5px;
+       padding: 0.5rem;
    }
    .links {
        width: 85%;
@@ -146,7 +132,7 @@ nav a:hover {
 
 @media (max-width: 500px) {
     body {
-    padding: 30px;
+    padding: 2.0rem;
     }
     .whole-two {
         flex-direction: column;
@@ -155,12 +141,18 @@ nav a:hover {
         width: 95%;
     }
     .banner-img {
-        width: 10%;
-        height: auto;
+        align-items: center;
+        width: 2.0rem;
     }
     .links a {
         display: flex;
         flex-direction: column;
         border-bottom: 1px solid black;
+    }
+    .whole {
+        flex-direction: column;
+    }
+    .half {
+        width: 95%;
     }
 }
